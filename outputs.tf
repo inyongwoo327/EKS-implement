@@ -9,11 +9,11 @@ output "cluster_region" {
 output "kubeconfig_file_path" {
     value = "${path.module}/kubeconfig"
 }
-
+/*
 output "nginx_service_url" {
-    value = aws_lb.nginx_lb.dns_name
+  value = aws_lb.nginx_lb.dns_name
 }
-
+*/
 output "workspace" {
     value = "workspace ${terraform.workspace}"
 }
